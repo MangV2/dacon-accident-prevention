@@ -9,3 +9,7 @@ csv/finetuned+RAG.csv
 csv/finturned.csv
 csv/Ensenble Retriever_V1.csv
 csv/Ensenble Retriever_V2(양자화 없이).csv
+test2.csv
+train2.csv
+csv/Ensenble Retriever_V3(파인튜닝 모델 적용).csv
+csv/템플릿적용.csv
