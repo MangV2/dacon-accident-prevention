@@ -13,3 +13,9 @@ test2.csv
 train2.csv
 csv/Ensenble Retriever_V3(파인튜닝 모델 적용).csv
 csv/템플릿적용.csv
+2023.csv
+sample_submission.csv
+.gitignore
+train.csv
+test.csv
+csv/템플릿적용V2.csv
