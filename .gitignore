@@ -1,28 +1,3 @@
-submissionV3.csv
-rule_base_v2.csv
-csv/submissionv2.csv
-csv/submissionV4.csv
-csv/submissionV5.csv
-csv/submissionV6.csv
+
 model_weight/v1/adapter_config.json
-csv/finetuned+RAG.csv
-csv/finturned.csv
-csv/Ensenble Retriever_V1.csv
-csv/Ensenble Retriever_V2(양자화 없이).csv
-test2.csv
-train2.csv
-csv/Ensenble Retriever_V3(파인튜닝 모델 적용).csv
-csv/템플릿적용.csv
-2023.csv
-sample_submission.csv
-.gitignore
-train.csv
-test.csv
-csv/템플릿적용V2.csv
-df.csv
-진짜 시작/test_df.csv
-.gitignore
-csv/범용답변만들기 프롬프트적용.csv
-.gitignore
-진짜 시작/train_df.csv
-csv/범용답변만들기 프롬프트적용V2.csv
+*.csv
