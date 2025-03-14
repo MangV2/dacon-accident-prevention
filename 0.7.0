@@ -1,2 +1,0 @@
-Requirement already satisfied: JPype1 in c:\users\minkyu\appdata\local\anaconda3\envs\sd2\lib\site-packages (1.5.2)
-Requirement already satisfied: packaging in c:\users\minkyu\appdata\local\anaconda3\envs\sd2\lib\site-packages (from JPype1) (24.2)

@@ -20,3 +20,9 @@ train.csv
 test.csv
 csv/템플릿적용V2.csv
 df.csv
+진짜 시작/test_df.csv
+.gitignore
+csv/범용답변만들기 프롬프트적용.csv
+.gitignore
+진짜 시작/train_df.csv
+csv/범용답변만들기 프롬프트적용V2.csv
