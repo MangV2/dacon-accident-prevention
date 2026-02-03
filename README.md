@@ -8,7 +8,7 @@ RAG(Retrieval-Augmented Generation) 기반으로 104개의 건설안전지침 �
 
 - **데이터 증강**: BERT 기반 Random Masking Replacement로 훈련 데이터 확장
 - **LLM 파인튜닝**: Ko-Gemma-2-9B 모델을 QLoRA로 효율적 학습
-- **RAG 시스템**: FAISS 벡터 스토어 + Cross-Encoder 재순위화
+- **RAG 시스템**: Hybrid Retrieval(BM25+FAISS) + Cross-Encoder 재순위화
 - **자동 답변 생성**: 건설 현장 사고에 대한 맞춤형 안전 대책 생성
 
 ### 사용한 모델 
@@ -25,9 +25,9 @@ RAG(Retrieval-Augmented Generation) 기반으로 104개의 건설안전지침 �
 
 - **불필요 정보 제거**: 정규표현식을 사용하여 문서 상단 반복 문구('KOSHA GUIDE'), 그림 캡션, 비표준 유니코드(PUA) 문자 등을 제거
 
-- **문서 분할(Chunking)**:
-  - `chunk_size`: 500자 단위 분할
-  - `overlap`: 문맥 보존을 위해 10%(50자) 중첩 허용
+- **의미 기반 문서 분할 (Semantic Chunking)**:
+  - SemanticChunker를 활용하여 문장 간 의미적 유사도를 분석, 주제가 전환되는 지점(Breakpoint)에서 문서를 분할
+  - ercentile threshold 방식을 적용하여 유동적으로 청크 크기 조절 및 문맥 보존 강화
 
 ### 2.2 정형 데이터 전처리 및 증강
 
